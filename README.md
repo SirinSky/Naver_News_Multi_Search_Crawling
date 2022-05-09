@@ -1,5 +1,6 @@
-# naver_news_crawling
-Python을 이용한 네이버 뉴스 리스트 크롤링 프로그램 (naver news crawling)
+# Naver_News_Multi_Search_Crawling
+
+'sbomhoo'님의 Python을 이용한 네이버 뉴스 리스트 크롤링 프로그램에, 여러 검색어를 검색할 수 있는 멀티서치 기능과 이에 중복되는 기사를 하나로 줄여주는 기능을 넣은 멀티 서치 크롤링 프로그램입니다.
 
 ------
  사용 라이브러리  
