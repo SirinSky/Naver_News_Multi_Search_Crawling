@@ -20,8 +20,8 @@ Python을 이용한 네이버 뉴스 리스트 크롤링 프로그램 (naver new
 ------
  실행 
 -------------
-![1](Multi_Search_1.png)
+![Multi_Search_1](Multi_Search_1.png)
 
-![2](Multi_Search_2.png)
+![Multi_Search_2](Multi_Search_2.png)
 
-![3](Multi_Search_3.png)
+![Multi_Search_3](Multi_Search_3.png)
