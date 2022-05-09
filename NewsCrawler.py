@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -11,9 +5,6 @@ import requests
 import pandas as pd
 import re
 import openpyxl
-
-
-# In[2]:
 
 
 #각 크롤링 결과 저장하기 위한 리스트 선언 
@@ -24,15 +15,8 @@ date_text=[]
 contents_text=[]
 
 
-# In[3]:
-
-
 #엑셀로 저장하기 위한 변수
-RESULT_PATH ='C:/NewsResult/'  #결과 저장할 경로
 now = datetime.now() #파일이름 현 시간으로 저장하기
-
-
-# In[4]:
 
 
 #날짜 정제화 함수
@@ -55,10 +39,6 @@ def date_cleansing(test):
         match = r.search(test).group(1)
         #print(match)
         date_text.append(match)
-
-
-# In[5]:
-
 
 def crawler(maxpage,query,sort,s_date,e_date):
 
@@ -105,11 +85,7 @@ def crawler(maxpage,query,sort,s_date,e_date):
 
     return dictionary
     
-
-
-# In[6]:
-
-
+    
 def crawlerResult(dic):
 
     df = pd.DataFrame(dic)  #df로 변환
@@ -136,10 +112,7 @@ def crawlerResult(dic):
     wb.save(outputFileName)
     wb.close()
 
-
-# In[7]:
-
-
+    
 def main():
     info_main = input("="*50+"\n"+"입력 형식에 맞게 입력해주세요."+"\n"+" 시작하시려면 Enter를 눌러주세요."+"\n"+"="*50)
    
@@ -220,27 +193,5 @@ def main():
     input("작업 완료! - 결과값은 크롤러가 있는 폴더 안에 생성됩니다." + "\n" +"Enter 입력시 종료")
     return
 
-
-# In[ ]:
-
-
 main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
